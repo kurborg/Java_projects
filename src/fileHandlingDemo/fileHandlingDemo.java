@@ -12,7 +12,18 @@ public class fileHandlingDemo
 		
 		try 
 		{
-			reader = new BufferedReader(new FileReader("my-File.txt"));
+			String text = "Hello World";
+			try(BufferedWriter writer = new BufferedWriter(new FileWriter("myFile2.txt", false)))
+			{
+				writer.write(text);
+				writer.newLine();	
+			}
+			
+			catch(IOException e)
+			{
+				System.out.println(e.getMessage());
+			}
+			reader = new BufferedReader(new FileReader("myFile.txt"));
 			line = reader.readLine();
 			while(line != null)	
 			{
