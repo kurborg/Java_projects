@@ -8,14 +8,12 @@ private int membershipPoints;
 	{
 		super (pMemberType, pMemberID, pName, pFees);
 		membershipPoints = pMembershipPoints;
-		
-		toString();
 	}
 	
 	@Override
 	public String toString()
 	{
-		return super.toString() + membershipPoints;
+		return super.toString() + "," + membershipPoints;
 	}
 
 	public int getMembershipPoints() 

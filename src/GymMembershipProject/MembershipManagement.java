@@ -165,13 +165,13 @@ public class MembershipManagement
 				System.out.println("Member Name = "+ memberInfo[2]);
 				System.out.println("Membership Fees = "+ memberInfo[3]);
 				
-				if (memberInfo[0] == "S") 
+				if (memberInfo[0].equals("S")) 
 				{
-				System.out.println("Club ID = "+ memberInfo[4]);
+					System.out.println("Club ID = "+ memberInfo[4]);
 				}
 				else 
 				{
-				System.out.println("Membership Points = "+ memberInfo[4]);
+					System.out.println("Membership Points = "+ memberInfo[4]);
 				}
 				
 				return;

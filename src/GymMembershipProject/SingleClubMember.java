@@ -8,13 +8,12 @@ public class SingleClubMember extends Member
 	{
 		super (pMemberType, pMemberID, pName, pFees);
 		club = pClub;
-		toString();
 	}
 	
 	@Override
 	public String toString()
 	{
-		return super.toString() + club;
+		return super.toString()  + "," + club;
 	}
 
 	public int getClub() 
